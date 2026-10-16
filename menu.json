@@ -1,0 +1,10 @@
+{
+  "items": [
+    {
+      "name": "Run Calendar App",
+      "priority": 1,
+      "action": "/mnt/us/extensions/kterm/bin/kterm.sh -e /mnt/us/extensions/Calendar_App/launch.sh",
+      "type": "cmd"
+    }
+  ]
+}
