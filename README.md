@@ -12,7 +12,7 @@ This did not work for me however. After some struggle I downloaded the file *pyt
 
 The Kindle I have been using is a PW4, which may have caused compatibility issues with the method used to install python the intended way. The calendar has been tested on a KT3 and should work on any kindle, as long as it can run Python 3.11 or above. If you find that it works on other devices please let me know, and if it doesn't work/breaks something also let me know.
 
-Download all the files in the main branch and place them into a folder called *Calendar_App* under *extensions*.
+Download the zip file and rename it *Calendar_App* and place it within *extensions* on the root directory.
 
 ### Confirmed Compatible Devices
 - KT3 Kindle Basic 2 (2016)
