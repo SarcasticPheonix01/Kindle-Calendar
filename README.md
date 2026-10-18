@@ -1,8 +1,6 @@
 # Kindle-Calendar
 A simple calendar to be run on a jailbroken kindle. Text based and similar in functionality to a dated notepad.
 
-<p> </p>
-
 ## Set Up
 In order to use this project your kindle has to be jailbroken, with KUAL, mrpackages, and Python installed. Please follow the instructions over at https://kindlemodding.org/ to get the initial jailbreak. Install k-term using the instructions at https://www.fabiszewski.net/kindle-terminal/. After, you will need to get Python and install it as *python3* in the root directory. There is no straight forward way to do this on kindles, as they can be finicky with hard vs soft point systems. 
 
@@ -23,9 +21,9 @@ The Kindle I have been using is a PW4, which may have caused compatibility issue
 ***Subject to Change***
  
 #### Release 1 - Functionality Updates
-- Settings Menu - *Contains the power to customize your experience.*
-- Abbreviated Days of the Week - *Includes abbreviated week days to solidfy their existence in time.*
-- Automatic Slashes - *Removes the tedium of typing / after every two numbers.*
+- Settings Menu
+- Abbreviated Days of the Week
+- Automatic Slashes
 
 #### Release 2 - User Quality of Life Updates
 - Editing events
