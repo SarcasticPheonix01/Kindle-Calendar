@@ -1,0 +1,21 @@
+Today's Events
+No user input needed.
+Displays the events logged for the current day.
+
+Enter Event
+Format is: date (yy/mm/dd), event name.
+Enters an event into the database.
+
+Retrieve Events
+Format is: start date of query, end date
+Retrieves events between two dates.
+Helpful when you only know an event's date.
+
+Search Events
+Format is: event name (case insensitive), include past dates (y/n)
+Search for events using a search term.
+Helpful when you only know an event's name.
+
+Delete Event
+Format is: date (yy/mm/dd)
+Delete an event on a chosen date.
