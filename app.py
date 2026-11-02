@@ -1,13 +1,17 @@
-# Kindle Calendar App v1.2.0
+# Kindle Calendar App v1.1.1
 
 """ 
- v1.2.0 updates include:
+ v1.1.0 updates includes:
  - editable settings
  - automatic '/' between date elements
  - abbreviated days of week
  - help menu
- - smaller defualt text
+ - smaller default text
 
+ v1.1.1 patch notes:
+ - grammer and format changes (in progress)
+ - date_str in action_delete was called before it was declared
+ - update config.xml to correct version 
 
 Future Updates:
  - support for ANSI characters (ex: arrow keys)
@@ -16,6 +20,7 @@ Future Updates:
  - automatic holiday population
  - automatic capitalization
  - customizable text size
+ - startup screen
 """
 
 
@@ -346,10 +351,10 @@ def action_delete():
             print("Please try again with: yy/mm/dd")
             continue
         events_on_day = get_events_on_date(text)
+        date_str = text
         if not events_on_day:
             print(f"No events found on{setting_days_of_week(date_str)} {text}.")
             return
-        date_str = text
         print(f"Events on {date_str}:")
         for i, name in enumerate(events_on_day, start=1):
             print(f"  {i}. {name}")
