@@ -19,11 +19,6 @@ The Kindle I have been using is a PW4, which may have caused compatibility issue
 ## Roadmap
 
 ***Subject to Change***
- 
-#### Release 1 - Functionality Updates
-- Settings Menu
-- Abbreviated Days of the Week
-- Automatic Slashes
 
 #### Release 2 - User Quality of Life Updates
 - Editing events
