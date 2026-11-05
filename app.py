@@ -1,4 +1,4 @@
-# Kindle Calendar App v1.1.1
+# Kindle Calendar App v1.1.2
 
 """ 
  v1.1.0 updates includes:
@@ -9,9 +9,16 @@
  - smaller default text
 
  v1.1.1 patch notes:
- - grammer and format changes (in progress)
+ - grammar and format changes
  - date_str in action_delete was called before it was declared
  - update config.xml to correct version 
+
+ v1.1.2 patch notes:
+ - grammar changes
+ - bug fixes in 'retrieve events'
+    - retrieving any date with events triggers an error
+ - replaced 'today' in action_delete with date_str
+ - error handling updates
 
 Future Updates:
  - support for ANSI characters (ex: arrow keys)
@@ -21,6 +28,8 @@ Future Updates:
  - automatic capitalization
  - customizable text size
  - startup screen
+ - patch behavior when retrieving one date
+ - update help files
 """
 
 
@@ -316,7 +325,6 @@ def action_retrieve():
             continue
         date_str, num_days = parsed
         results = get_events_in_range(date_str, num_days)
-        print(results)
         if not results:
             end_date = (
                 datetime.strptime(date_str, DATE_FORMAT) + timedelta(days=num_days)
@@ -324,8 +332,8 @@ def action_retrieve():
             print(f"No events found between{setting_days_of_week(date_str)} {display_date(date_str)} and {setting_days_of_week(end_date)} {display_date(end_date)}.")
         else:
             print("Event(s) found:")
-            for i, name in results:
-                print(f"  {i} -{setting_days_of_week((results[i])[0])} {name}")
+            for i, (day, name) in enumerate(results, start=1):
+                print(f"  {i}.{setting_days_of_week(day)} {display_date(day)} - {name}")
         print("\nPress Enter to return to the main menu.")
         input()
         return
@@ -388,7 +396,7 @@ def action_delete():
                 continue
             event_name = events_on_day[index - 1]
             delete_event(date_str, event_name)
-            print(f"'{event_name}' on{setting_days_of_week(today)} {date_str} deleted.")
+            print(f"'{event_name}' on{setting_days_of_week(date_str)} {date_str} deleted.")
             return
 
 def action_search():
