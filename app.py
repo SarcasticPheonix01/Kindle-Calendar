@@ -18,7 +18,7 @@
  - bug fixes in 'retrieve events'
     - retrieving any date with events triggers an error
  - replaced 'today' in action_delete with date_str
- - error handling updates
+ - fixed being unable to run the app because of a binary naming issue
 
 Future Updates:
  - support for ANSI characters (ex: arrow keys)
