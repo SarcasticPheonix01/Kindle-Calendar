@@ -1,6 +1,9 @@
 # Kindle-Calendar
 A simple calendar to be run on a jailbroken kindle. Text based and similar in functionality to a dated notepad.
 
+<img width="765" height="423" alt="image" src="https://github.com/user-attachments/assets/2999138d-fc06-4160-9df9-db312c040184" />
+
+
 ## Set Up
 In order to use this project your kindle has to be jailbroken, with KUAL, mrpackages, and Python installed. Please follow the instructions over at https://kindlemodding.org/ to get the initial jailbreak. Install k-term using the instructions at https://www.fabiszewski.net/kindle-terminal/. After, you will need to get Python and install it as *python3* in the root directory. There is no straight forward way to do this on kindles, as they can be finicky with hard vs soft point systems. 
 
